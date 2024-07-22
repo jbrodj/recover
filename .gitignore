@@ -1,0 +1,6 @@
+
+# Ignore all files except files with extensions (to ignore the compiled binary file)
+*
+!**/*.*
+
+*.jpg
