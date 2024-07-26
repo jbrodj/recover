@@ -66,6 +66,11 @@ int main(int argc, char *argv[])
 
     // Declare filename variable for our current jpg
     char *filename = malloc(8);
+    if (filename == NULL)
+    {
+      printf("Memory error");
+      return 1;
+    }
 
     // While there is file left to read (ie while there is a 512B chunk to read).
     // `== 1` here means == 1 x sizeof(block) (ie. 1 x 512B).
